@@ -31,12 +31,12 @@ public class Main {
         }
 
         //4
-        int age2 = 10;
+        int age2 = 7;
 
         if (age2 >= 2 && age2 <= 6) {
             System.out.println("нужно ходить в детский сад");
         }
-        if (age2 > 6 && age2 <= 17) {
+        if (age2 >= 7 && age2 <= 17) {
             System.out.println("нужно ходить в школу");
         }
         if (age2 >= 18 && age2 <= 24) {
@@ -47,14 +47,15 @@ public class Main {
         };
 
         //5
-        int age3 = 20;
+        int age3 = 14;
 
         if (age3 <= 5) {
             System.out.println("нельзя кататься на аттракционе");
         }
         if (age3 >= 14) {
             System.out.println("можно кататься на аттракционе без сопровождения взрослого");
-        } else {
+        }
+        if (age3 > 5 && age3 < 14) {
             System.out.println("можно кататься на аттракционе в сопровождении взрослого");
         }
 
