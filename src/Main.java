@@ -11,8 +11,9 @@ public class Main {
         while (available < total) {
             available += inMonth;
             months += 1;
+            System.out.println("Месяц " + months + ", сумма накоплений равна " + available + " рублей");
         }
-        System.out.println("Месяц " + months + ", сумма накоплений равна " + available + " рублей");
+
 
 
         System.out.println("\nЗадача 2");
@@ -22,10 +23,8 @@ public class Main {
             start1 += 1;
         }
         System.out.println();
-        int start2 = 10;
-        while (start2 > 0) {
-            System.out.print(start2 + " ");
-            start2 -= 1;
+        for (int i = 10; i > 0; i--) {
+            System.out.print(i + " ");
         }
 
 
