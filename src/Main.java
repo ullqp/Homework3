@@ -28,21 +28,21 @@ public class Main {
 
 
         System.out.println("\nЗадача 3");
-        for (int i = 2; i >= 0; i--) {
+        for (int i = numbers.length-1; i >= 0; i--) {
             System.out.print(numbers[i]);
             if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 2; i >= 0; i--) {
+        for (int i = digits.length-1; i >= 0; i--) {
             System.out.print(digits[i]);
             if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 3; i >= 0; i--) {
+        for (int i = magic.length-1; i >= 0; i--) {
             System.out.print(magic[i]);
             if (i != 0) {
                 System.out.print(", ");
@@ -51,7 +51,7 @@ public class Main {
 
 
         System.out.println("\n\nЗадача 4");
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 1) {
             numbers[i] += 1;
         }}
