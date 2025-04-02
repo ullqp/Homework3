@@ -49,7 +49,6 @@ public class Main {
         }
 
 
-
     public static int[] generateRandomArray() {
         Random random = new Random();
         int[] array = new int[5];
