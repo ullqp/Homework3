@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -28,7 +30,7 @@ public class Main {
 
         } else {
             if (clientOS == 0) {
-            System.out.println("Установите версию приложения для iOS по ссылке.");
+                System.out.println("Установите версию приложения для iOS по ссылке.");
             }
             else {
                 System.out.println("Установите версию приложения для Android по ссылке.");
@@ -64,8 +66,8 @@ public class Main {
         printIsYearLeap(isYearLeap, year);
 
         int clientOS = 0;
-        int clientDeviceYear = 2016;
-        boolean isVersionLite = isVersionLite(clientOS, clientDeviceYear);
+        int currentYear  = LocalDate.now().getYear();;
+        boolean isVersionLite = isVersionLite(clientOS, currentYear);
         printIsVersionLite(clientOS, isVersionLite);
 
         int deliveryDistance = 101;
@@ -73,4 +75,4 @@ public class Main {
         printCountDays(countDays);
 
     }
-    }
+}
