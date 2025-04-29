@@ -10,6 +10,19 @@ public class Book {
         this.year = year;
     }
 
+    public String toString() {
+        return "Название: " + this.title + "; Автор: " + this.author + "; Год издания: " + this.year + ".";
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book book2 = (Book) other;
+        return title.equals(book2.title) && author.equals(book2.author) && year == book2.year;
+    }
+
     public String getTitle() {
         return this.title;
     }
