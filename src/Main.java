@@ -1,31 +1,32 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        Car car = new Car();
+        Car car2 = new Car();
+        car.setModelName("car1");
+        car2.setModelName("car2");
+        car.setWheelsCount(4);
+        car2.setWheelsCount(4);
 
-        Author rowling = new Author("Joanne", "Rowling ");
-        Author pushkin = new Author("Alexander", "Pushkin");
-        System.out.println("Имя - " + rowling.getName());
-        System.out.println("Фамилия - " + rowling.getSurname() + "\n");
-        System.out.println("Имя - " + pushkin.getName());
-        System.out.println("Фамилия - " + pushkin.getSurname() + "\n\n");
+        Truck truck = new Truck();
+        Truck truck2 = new Truck();
+        truck.setModelName("truck1");
+        truck2.setModelName("truck2");
+        truck.setWheelsCount(6);
+        truck2.setWheelsCount(8);
 
-        Book harryPotter = new Book("Harry Potter", rowling, 1997);
-        Book evgeniyOnegin = new Book("Evgeniy Onegin", pushkin, 1833);
-        System.out.println("Название - " + harryPotter.getTitle());
-        System.out.println("Автор - " + harryPotter.getAuthor().getName() + " " + harryPotter.getAuthor().getSurname());
-        System.out.println("Год публикации - " + harryPotter.getYear() + "\n");
+        Bicycle bicycle = new Bicycle();
+        Bicycle bicycle2 = new Bicycle();
+        bicycle.setModelName("bicycle1");
+        bicycle2.setModelName("bicycle2");
+        bicycle.setWheelsCount(2);
+        bicycle2.setWheelsCount(2);
 
-        System.out.println("Название - " + evgeniyOnegin.getTitle());
-        System.out.println("Автор - " + evgeniyOnegin.getAuthor().getName() + " " + evgeniyOnegin.getAuthor().getSurname());
-        System.out.println("Год публикации - " + evgeniyOnegin.getYear() + "\n");
-
-        evgeniyOnegin.setYear(2026);
-        System.out.println("Год публикации - " + evgeniyOnegin.getYear());
-
-
-
-
-
+        ServiceStation station = new ServiceStation();
+        station.checkAll(car, null, null);
+        station.checkAll(car2, null, null);
+        station.checkAll(null, bicycle, null);
+        station.checkAll(null, bicycle2, null);
+        station.checkAll(null, null, truck);
+        station.checkAll(null, null, truck2);
     }
 }
