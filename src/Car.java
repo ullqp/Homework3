@@ -1,7 +1,5 @@
-public class Car extends Vehicle{
-
-    @Override
-    public void checkTrailer() {
-        System.out.println("Не проверяем прицеп");
+public class Car extends Vehicle {
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
     }
 }
